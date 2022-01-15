@@ -16,13 +16,13 @@ Scenario: Check count for images of appenzeller, african, bulldog, bullterrier
     @emrecandan
     Scenario Outline: Check count for images of each breeds
       When I make request image count for "<breeds_name>"
-      Then I verify count to "<breeds_count>"
+      Then I verify count to <images_count>
       Examples:
-        |breeds_name| breeds_count|
-        | appenzeller| 150        |
-        | african    | 170        |
-        | bulldog    | 350        |
-        |bullterrier | 157        |
+        |breeds_name| images_count|
+        | appenzeller| 150       |
+        | african    | 171        |
+        | bulldog    | 351        |
+        |bullterrier | 158        |
 
 
 
